@@ -37,3 +37,22 @@ nav {
 nav ul {
     display: flex;
 }
+
+nav ul li {
+    margin: 30px;
+    font-family: myriad pro regular;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.logo {
+    font-family: cursive;
+    color: black;
+    font-size: 22px;
+}
+
+.active {
+    font-weight: bold;
+    color: #2d2a2a;
+}
