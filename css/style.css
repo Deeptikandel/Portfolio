@@ -22,6 +22,7 @@ section {
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav ul {
 
 nav ul li {
     margin: 30px;
-    font-family: myriad pro regular;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #505050;
     font-size: 15px;
     font-weight: 700;
@@ -55,4 +56,38 @@ nav ul li {
 .active {
     font-weight: bold;
     color: #2d2a2a;
+}
+
+.text-container p:nth-child(1) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+}
+
+.text-container p:nth-child(2) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 60px;
+}
+
+.text-container p:nth-child(3) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #403e3e;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.text-container p {
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+
+.text-container {
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform: translate(-13%, -42%);
 }
