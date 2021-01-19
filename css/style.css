@@ -41,7 +41,7 @@ nav ul {
 
 nav ul li {
     margin: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: calibri;
     color: #505050;
     font-size: 15px;
     font-weight: 700;
@@ -59,14 +59,14 @@ nav ul li {
 }
 
 .text-container p:nth-child(1) {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: calibri;
     font-weight: bold;
     color: #6d6d6d;
     font-size: 22px;
 }
 
 .text-container p:nth-child(2) {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Handlee', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     color: #1a1a1a;
@@ -74,7 +74,7 @@ nav ul li {
 }
 
 .text-container p:nth-child(3) {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: calibri;
     color: #403e3e;
     font-size: 30px;
     line-height: 30px;
@@ -96,7 +96,7 @@ nav ul li {
     width: 130px;
     height: 42px;
     border-radius: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: calibri;
     font-weight: bold;
     font-size: 14px;
     outline: none;
@@ -149,7 +149,7 @@ button:active {
 
 .about-text p:nth-child(1) {
     color: #403e3e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: calibri;
     font-weight: bold;
     font-size: 23px;
     line-height: 0px;
@@ -157,7 +157,7 @@ button:active {
 
 .about-text p:nth-child(2) {
     color: #3e3d3d;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: calibri;
     font-weight: bold;
     font-size: 13px;
     line-height: 5px;
@@ -166,7 +166,7 @@ button:active {
 .about-text p:nth-child(3),
 .about-text p:nth-child(4) {
     color: #7e7d7d;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: calibri;
     font-size: 16px;
 }
 
@@ -176,6 +176,103 @@ button:active {
     color: #ffffff;
     outline: none;
     border: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: calibri;
     background-color: #262525;
+}
+
+.projects {
+    height: 600px;
+    background-color: #FFFFFF;
+    padding: 2% 10% 0px 10%;
+}
+
+.projects-text p:nth-child(1) {
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 30px;
+    line-height: 0px;
+}
+
+.projects-text p:nth-child(2) {
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 10px;
+    line-height: 5px;
+}
+
+.projects-text p:nth-child(3) {
+    font-family: calibri;
+    color: #7e7d7d;
+}
+
+.projects-text {
+    width: 500px;
+    margin: 50px 0px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 4px;
+    background-color: #2b2525;
+}
+
+.box-1 span,
+.box-2 span,
+.box-3 span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    font-weight: bold;
+}
+
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2) {
+    color: #FFFFFF;
+    font-family: calibri;
+    font-size: 23px;
+    line-height: 0px;
+}
+
+.box-1 p:nth-child(3),
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3) {
+    font-family: calibri;
+    color: #8F8F8F;
+    text-align: center;
+    width: 230px;
+    margin: 0px 0px 20px 0px;
+}
+
+.box-1 button,
+.box-2 button,
+.box-3 button {
+    width: 100px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 5px;
 }
