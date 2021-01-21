@@ -29,10 +29,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
     height: 60px;
     background-color: #ffff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     padding: 0px 5%;
+    z-index: 1;
+    position: fixed;
 }
 
 nav ul {
@@ -142,7 +145,6 @@ button:hover {
 .about-container img {
     height: 280px;
     border-radius: 48%;
-    border: 0.5px solid #cac8c8;
 }
 
 .about-text {
@@ -184,9 +186,11 @@ button:hover {
 }
 
 .projects {
+    max-width: 1080px;
     height: 600px;
     background-color: #FFFFFF;
     padding: 2% 10% 0px 10%;
+    margin: auto;
 }
 
 .projects-text p:nth-child(1) {
@@ -216,8 +220,15 @@ button:hover {
 }
 
 .box-container {
+    width: 80%;
     display: flex;
     justify-content: space-between;
+}
+
+.box {
+    transition: 0.6s;
+    position: relative;
+    transform-style: preserve-3d;
 }
 
 .box-container .box .front-face {
@@ -228,8 +239,14 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
+    z-index: 2;
+    transform: rotate(0deg);
+    position: absolute;
+    transition: all 0.4s ease;
+    backface-visibility: hidden;
 }
 
 .box .back-face {
@@ -246,13 +263,14 @@ button:hover {
     background-color: #2b2525;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    transform: translateY(-400px) rotateX(-90deg);
-    transition: all 0.5s ease;
+    transform: rotateX(180deg);
+    transition: all 0.4s ease;
 }
 
 .box:hover .back-face {
     opacity: 1;
     transform: rotateX(20deg);
+    cursor: pointer;
 }
 
 .box:hover .front-face {
@@ -260,6 +278,7 @@ button:hover {
     transform: translateY(-10px) rotateX(90deg);
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .box .front-face span {
