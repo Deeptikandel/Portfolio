@@ -185,7 +185,7 @@ button:hover {
     margin: 0px 10px;
 }
 
-.projects {
+.services {
     max-width: 1080px;
     height: 600px;
     background-color: #FFFFFF;
@@ -193,7 +193,7 @@ button:hover {
     margin: auto;
 }
 
-.projects-text p:nth-child(1) {
+.services-text p:nth-child(1) {
     font-family: Garamond (serif);
     font-weight: bold;
     color: #3e3d3d;
@@ -201,7 +201,7 @@ button:hover {
     line-height: 0px;
 }
 
-.projects-text p:nth-child(2) {
+.services-text p:nth-child(2) {
     font-family: Garamond (serif);
     font-weight: bold;
     color: #3e3d3d;
@@ -209,12 +209,12 @@ button:hover {
     line-height: 5px;
 }
 
-.projects-text p:nth-child(3) {
+.services-text p:nth-child(3) {
     font-family: Garamond (serif);
     color: #7e7d7d;
 }
 
-.projects-text {
+.services-text {
     width: 500px;
     margin: 50px 0px;
 }
@@ -494,14 +494,14 @@ footer {
     .about-text p:nth-child(4) {
         font-size: 14px;
     }
-    .projects {
+    .services {
         padding: 2% 5% 0px 5%;
     }
     .box-container {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .projects {
+    .services {
         height: auto;
     }
     .box {
@@ -599,7 +599,7 @@ footer {
         width: 90%;
         text-align: center;
     }
-    .projects-text {
+    .services-text {
         width: 100%;
     }
     .contact-me {
