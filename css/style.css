@@ -459,6 +459,55 @@ footer {
     color: #2B2B2B;
 }
 
+div.main-body {
+    display: grid;
+    grid-template-columns: minmax(200px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+}
+
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+}
+
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 243, 188);
+}
+
+main#main-doc {
+    grid-area: mainContent;
+    background-color: rgb(253, 251, 243);
+    padding: 20px;
+}
+
+header {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+code {
+    display: block;
+    background-color: rgb(219, 216, 216);
+    padding: 20px;
+}
+
+@media screen and (max-width:750px) {
+    div.main-body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar" "mainContent";
+    }
+    nav#navbar {
+        position: inherit;
+    }
+}
+
 @media(max-width:1000px) {
     * {
         box-sizing: border-box;
