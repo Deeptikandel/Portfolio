@@ -44,7 +44,7 @@ nav ul {
 
 nav ul li {
     margin: 30px;
-    font-family: Garamond (serif);
+    font-family: calibri;
     color: #505050;
     font-size: 15px;
     font-weight: 700;
@@ -101,7 +101,7 @@ nav ul li {
     border-radius: 10px;
     font-family: calibri;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
     margin: 0px 10px;
 }
@@ -153,7 +153,7 @@ button:hover {
 
 .about-text p:nth-child(1) {
     color: #403e3e;
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-weight: bold;
     font-size: 23px;
     line-height: 0px;
@@ -161,17 +161,18 @@ button:hover {
 
 .about-text p:nth-child(2) {
     color: #3e3d3d;
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 5px;
 }
 
 .about-text p:nth-child(3),
 .about-text p:nth-child(4) {
     color: #7e7d7d;
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-size: 16px;
+    text-align: justify;
 }
 
 .about-text button {
@@ -180,7 +181,8 @@ button:hover {
     color: #ffffff;
     outline: none;
     border: none;
-    font-family: Garamond (serif);
+    font-family: calibri;
+    font-size: 15px;
     background-color: #262525;
     margin: 0px 10px;
 }
@@ -194,7 +196,7 @@ button:hover {
 }
 
 .services-text p:nth-child(1) {
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-weight: bold;
     color: #3e3d3d;
     font-size: 30px;
@@ -202,15 +204,15 @@ button:hover {
 }
 
 .services-text p:nth-child(2) {
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-weight: bold;
     color: #3e3d3d;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 5px;
 }
 
 .services-text p:nth-child(3) {
-    font-family: Garamond (serif);
+    font-family: calibri;
     color: #7e7d7d;
 }
 
@@ -285,7 +287,7 @@ button:hover {
     width: 200px;
     height: 40px;
     font-size: 30px;
-    font-family: Garamond (serif);
+    font-family: calibri;
     align-items: center;
 }
 
@@ -302,19 +304,19 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-weight: bold;
 }
 
 .box .back-face p:nth-child(2) {
     color: #FFFFFF;
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-size: 23px;
     line-height: 0px;
 }
 
 .box .back-face p:nth-child(3) {
-    font-family: Garamond (serif);
+    font-family: calibri;
     color: #8F8F8F;
     text-align: center;
     width: 230px;
@@ -345,7 +347,7 @@ button:hover {
 .contact-me p {
     color: #FFFFFF;
     font-size: 30px;
-    font-family: Garamond (serif);
+    font-family: calibri;
     font-weight: bold;
     border-bottom: 2px solid #ffffff;
 }
@@ -361,7 +363,7 @@ button:hover {
 }
 
 footer p {
-    font-family: Garamond (serif);
+    font-family: calibri;
 }
 
 footer p:nth-child(1) {
