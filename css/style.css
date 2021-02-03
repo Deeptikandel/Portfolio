@@ -119,6 +119,7 @@ nav ul li {
 
 button:hover {
     transform: scale(1.1);
+    transition: 0.1s;
 }
 
 .model {
@@ -181,6 +182,7 @@ button:hover {
     color: #ffffff;
     outline: none;
     border: none;
+    border-radius: 10px;
     font-family: calibri;
     font-size: 15px;
     background-color: #262525;
@@ -244,6 +246,7 @@ button:hover {
     text-align: center;
     align-items: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     z-index: 2;
     transform: rotate(0deg);
     position: absolute;
@@ -267,6 +270,7 @@ button:hover {
     backface-visibility: hidden;
     transform: rotateX(180deg);
     transition: all 0.4s ease;
+    border-radius: 10px;
 }
 
 .box:hover .back-face {
@@ -284,7 +288,7 @@ button:hover {
 }
 
 .box .front-face span {
-    width: 200px;
+    width: 130px;
     height: 40px;
     font-size: 30px;
     font-family: calibri;
@@ -297,8 +301,8 @@ button:hover {
 }
 
 .box .back-face span {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 0px;
     border-radius: 50%;
     background-color: #ffffff;
     display: flex;
@@ -323,14 +327,15 @@ button:hover {
     margin: 0px 0px 20px 0px;
 }
 
-.box button {
+
+/* .box button {
     width: 100px;
     height: 30px;
     background-color: #FFFFFF;
     border: none;
     outline: none;
     border-radius: 5px;
-}
+} */
 
 .contact-me {
     width: 100%;
@@ -357,6 +362,7 @@ button:hover {
     height: 40px;
     background-color: #FFFFFF;
     border: none;
+    border-radius: 10px;
     outline: none;
     font-size: 14px;
     font-weight: bold;
