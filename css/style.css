@@ -362,6 +362,14 @@ button:hover {
     font-weight: bold;
 }
 
+.contactme-email {
+    font-family: calibri;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: #2b2525;
+}
+
 footer p {
     font-family: calibri;
 }
