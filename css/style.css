@@ -199,16 +199,38 @@ button:hover {
 .projects {
     position: relative;
     display: flex;
+    flex: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.shape-container {
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex: wrap;
+}
+
+.projects p:nth-child(1) {
+    color: #403e3e;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 0px;
+    text-align: center;
+    width: 20%;
+    position: absolute;
+    border-bottom: 1px solid #5f5b5b;
+    padding-bottom: 20px;
+    box-shadow: 3px 5px rgb(187, 180, 180);
 }
 
 .projects .hexagon {
     position: relative;
     width: 350px;
     height: 300px;
-    margin: 50px 20px 70px;
+    margin: 60px 20px 70px;
 }
 
 .projects .hexagon::before {
@@ -488,6 +510,7 @@ code {
     section {
         background-image: none;
         background-color: #f7f7f7;
+        height: 70vh;
     }
     .model {
         display: none;
@@ -496,7 +519,7 @@ code {
         display: block;
     }
     .text-container p:nth-child(2) {
-        line-height: 40px;
+        line-height: 60px;
         margin: 0px;
         padding: 0px;
     }
