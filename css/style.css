@@ -1,7 +1,12 @@
 @charset "utf-8";
 
 /*CSS Document*/
-
+:root{
+    --secondary-shadow: #969291;
+}
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #f6f5f5;
     margin: 0px;
@@ -23,10 +28,10 @@ a:active {
     ;
 }
 
-section {
+.main {
     width: 100%;
-    height: 95vh;
-    background-image: url("../images/bg.jpg");
+    height: 90vh;
+    background-image: url("../assets/images/bg4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -39,7 +44,7 @@ nav {
     width: 90%;
     height: 60px;
     background-color: #ffff;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 0px 5%;
     z-index: 1;
     position: fixed;
@@ -97,8 +102,8 @@ nav ul li {
 
 .text-container {
     position: absolute;
-    left: 13%;
-    top: 42%;
+    left: 58%;
+    top: 40%;
     transform: translate(-13%, -42%);
 }
 
@@ -129,22 +134,22 @@ button:hover {
     transition: 0.1s;
 }
 
-.model {
+/* .model {
     height: 560px;
     position: absolute;
     bottom: 50px;
     left: 70%;
     transform: translateX(-70%);
-}
+} */
 
 .about-container {
     width: 80%;
     height: 330px;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px var(--secondary-shadow);
     display: flex;
-    margin: -7% auto 20px auto;
+    margin: -12% auto 20px auto;
     position: relative;
     justify-content: space-evenly;
     align-items: center;
@@ -195,102 +200,35 @@ button:hover {
     background-color: #262525;
     margin: 0px 10px;
 }
-
-.projects {
-    position: relative;
-    display: flex;
-    flex: wrap;
-    justify-content: center;
+.skills{
+    max-width: 68.75rem;
+    margin: auto;
     text-align: center;
-    background: rgb(240, 237, 237);
+    margin-top: 2.5rem;
+}
+.skills-header{
+    margin-bottom: 1rem;
+}
+.skills-wrapper img{
+padding: 1.25rem;
+}
+.icon{
+    width: 4rem;
+    height: 4rem;
+    
+}
+.icon:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
 }
 
-.shape-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: wrap;
+.icon-card{
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 25px;
+    margin: 10px;
 }
-
-.projects p:nth-child(1) {
-    color: #403e3e;
-    font-family: calibri;
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 0px;
-    text-align: center;
-    width: 20%;
-    position: absolute;
-    border-bottom: 1px solid #5f5b5b;
-    padding-bottom: 20px;
-    box-shadow: 3px 5px rgb(187, 180, 180);
-}
-
-.projects .hexagon {
-    position: relative;
-    width: 350px;
-    height: 300px;
-    margin: 60px 20px 70px;
-}
-
-.projects .hexagon::before {
-    content: "";
-    position: absolute;
-    bottom: -70px;
-    width: 100%;
-    height: 60px;
-    background: radial-gradient(rgba(0, 0, 0, 0.15), transparent, transparent);
-    border-radius: 50%;
-    transition: 0.5s;
-}
-
-.projects .hexagon:hover::before {
-    opacity: 0.8;
-    transform: scale(0.8);
-}
-
-.projects .hexagon .shape {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 56% 75%, 50% 75%, 0% 75%);
-    transition: 0.5s;
-}
-
-.projects .hexagon .shape img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.projects .hexagon:hover .shape {
-    transform: translateY(-10px);
-}
-
-.projects .hexagon .shape .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    background: linear-gradient(45deg, rgba(94, 152, 219, 0.48783263305322133) 49%, rgba(39, 158, 242, 0.08727240896358546) 97%);
-    color: #ffff;
-    opacity: 10;
-    transition: 0.5s;
-}
-
 .contact-me {
     width: 100%;
     height: 280px;
