@@ -17,7 +17,7 @@
         <!--navigation--->
         <nav>
             <!--logo-->
-            <a href="#" class="logo">DEEPTI</a>
+            <a href="#" class="logo"><i class="fab fa-dyalog"></i><i class="fab fa-etsy"></i><i class="fab fa-etsy"></i><span>pti</span></a>
             <!--menu-->
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -32,7 +32,7 @@
 
         <!--text-->
         <div class="text-container" id="home">
-            <p>Hey there,</p>
+            <p>Hello</p>
             <p>I'm <span style="color:#2f42eb;">DEEPTI</span></p>
             <p>I am Web Developer <br>& UX Designer</p>
             <button class="hire-btn">Hire me</button>
@@ -80,17 +80,68 @@
              </div>
             </div>
 
+   
+    <!--------Projects-->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Works</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/projects/project5.JPG"
+            alt=""
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Project 1</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Demo</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/projects/project2.JPG"
+            alt=""
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Project 2 </h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Demo</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/projects/project3.JPG"
+            alt=""
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Project 3</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Demo</a>
+        </div>
+      </div>
+   
+    
     </section>
         
 
-
-
         <!--contact me-->
         <div class="contact-me" id="contactme">
-            <p>Want to hire me?</p>
+            <p>Lets be in touch!!</p>
 
 
-            <button><a class="contactme-email" href="mailto: deepti.kandel@hotmail.com">Send Email</a></button>
+            <button><a class="contactme-email" href="mailto: deepti.kandel@hotmail.com">Send me an Email!</a></button>
         </div>
         <!--footer--------------->
         <footer>
@@ -106,13 +157,17 @@
             </div>
             <!--copyright-->
             <p class="copyright">&copy; Copyright 2021</p>
+            
         </footer>
+     
         <!--social-attach-bar-->
         <div class="social">
             <a href="https://www.instagram.com/kandeldeepti" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/deeptikandel/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/Deeptikandel" target="_blank"><i class="fab fa-github"></i></a>
+           
         </div>
+        
         <!--JQUery-------------------->
         <script type="text/javascript" src="js/JQuery.js"></script>
         <script type="text/javascript">
@@ -122,7 +177,49 @@
                     $('nav').toggleClass('active')
                 })
             })
+            </script>
+            <script type="text/javascript">
+
+            var btn=document.getElementsByClassName("btn");
+            var slide= document.getElementById("slide");
+
+            btn[0].onclick=function(){
+                slide.style.transform="translateX(0px)";
+                for(i=0; i<5; i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[1].onclick=function(){
+                slide.style.transform="translateX(-800px)";
+                for(i=0; i<5; i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[2].onclick=function(){
+                slide.style.transform="translateX(-1600px)";
+                for(i=0; i<5; i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[3].onclick=function(){
+                slide.style.transform="translateX(-2400px)";
+                for(i=0; i<5; i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[4].onclick=function(){
+                slide.style.transform="translateX(-3200px)";
+                for(i=0; i<5; i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
         </script>
+
 
 
 </body>

@@ -3,6 +3,8 @@
 /*CSS Document*/
 :root{
     --secondary-shadow: #969291;
+    --color:#1a1a1a;
+    --bottom-margin: 0.5rem;
 }
 html{
     scroll-behavior: smooth;
@@ -25,7 +27,6 @@ a {
 nav a:hover,
 a:active {
     color: #2f42eb;
-    ;
 }
 
 .main {
@@ -56,16 +57,17 @@ nav ul {
 
 nav ul li {
     margin: 30px;
-    font-family: calibri;
-    color: #030303;
-    font-size: 18px;
-    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e6d3d3;
+    font-size: 16px;
+    font-weight:400;
 }
 
 .logo {
     font-family: cursive;
-    color: black;
+    color: #1a1a1a;
     font-size: 22px;
+    letter-spacing: 3px;
 }
 
 .active {
@@ -78,7 +80,7 @@ nav ul li {
     font-weight: bold;
     color: #2f42eb;
     font-size: 22px;
-}
+   }
 
 .text-container p:nth-child(2) {
     font-family: 'Handlee', sans-serif;
@@ -103,7 +105,7 @@ nav ul li {
 .text-container {
     position: absolute;
     left: 58%;
-    top: 40%;
+    top: 30%;
     transform: translate(-13%, -42%);
 }
 
@@ -119,7 +121,7 @@ nav ul li {
 }
 
 .hire-btn {
-    border: 2px solid #373636;
+    border: 1px solid #373636;
     color: #373636;
 }
 
@@ -133,14 +135,6 @@ button:hover {
     transform: scale(1.1);
     transition: 0.1s;
 }
-
-/* .model {
-    height: 560px;
-    position: absolute;
-    bottom: 50px;
-    left: 70%;
-    transform: translateX(-70%);
-} */
 
 .about-container {
     width: 80%;
@@ -210,7 +204,7 @@ button:hover {
     margin-bottom: 1rem;
 }
 .skills-wrapper img{
-padding: 1.25rem;
+    padding: 1.25rem;
 }
 .icon{
     width: 4rem;
@@ -229,24 +223,81 @@ padding: 1.25rem;
     padding: 25px;
     margin: 10px;
 }
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
 .contact-me {
     width: 100%;
     height: 280px;
     background-color: #2b2525;
-    ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px 0px 20px 0px;
 }
+.btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background:#2b2525;
+    cursor: pointer;
+    transition: 0.5s;
 
+}
 .contact-me p {
     color: #FFFFFF;
     font-size: 30px;
     font-family: calibri;
     font-weight: bold;
     border-bottom: 2px solid #ffffff;
+}
+.active{
+    width: 45px;  
 }
 
 .contact-me button {
@@ -406,6 +457,7 @@ code {
     padding: 20px;
 }
 
+
 @media screen and (max-width:750px) {
     div.main-body {
         grid-template-columns: 1fr;
@@ -419,11 +471,6 @@ code {
 @media(max-width:1000px) {
     * {
         box-sizing: border-box;
-    }
-    .model {
-        height: 460px;
-        left: 90%;
-        transform: translateX(-90%);
     }
     .text-container {
         top: 46%;
@@ -469,9 +516,6 @@ code {
         background-image: none;
         background-color: #f7f7f7;
         height: 70vh;
-    }
-    .model {
-        display: none;
     }
     .toggle {
         display: block;
